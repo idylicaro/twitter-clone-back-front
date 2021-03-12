@@ -1,11 +1,13 @@
 import { createGlobalStyle } from 'styled-components'
 
+import theme from './theme'
+
 const GlobalStyle = createGlobalStyle`
    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--white);
+    color: &{theme.colors.white};
   }
   html, body, #root {
     max-height: 100vh;
@@ -19,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
   }
   html {
-    background: var('#000');
+    background: &{theme.colors.primary};
   }
 `
 

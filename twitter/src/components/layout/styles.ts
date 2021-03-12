@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
-  background: var(${({ theme }) => theme.colors.primary});
-`;
+  background: ${props => props.theme.colors.primary};
+`
 
 export const Wrapper = styled.div`
   height: 100%;
@@ -10,4 +10,4 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: center;
-`;
+`

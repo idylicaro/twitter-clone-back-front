@@ -1,19 +1,22 @@
-import React from "react";
+import React from 'react'
 
-import Main from '../Main';
+import Main from '../Main'
 
-import { Container, Wrapper } from './styles.ts'
+import MenuBar from '../MenuBar'
+import SideBar from '../SideBar'
 
-export default function Layout(){
+import { Container, Wrapper } from './styles'
+
+export default function Layout() {
   return (
     <>
       <Container>
         <Wrapper>
-          {/* <MenuBar/> */}
-            <Main></Main>
-            {/* <SideBar/> */}
+          <MenuBar />
+          <Main></Main>
+          <SideBar />
         </Wrapper>
       </Container>
     </>
-  );
+  )
 }

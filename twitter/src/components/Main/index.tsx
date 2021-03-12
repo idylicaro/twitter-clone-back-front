@@ -1,8 +1,19 @@
-import { Container, Header, BackIcon, ProfileInfo, BottomMenu, HomeIcon, SearchIcon, BellIcon, EmailIcon } from './styles';
+import {
+  Container,
+  Header,
+  BackIcon,
+  ProfileInfo,
+  BottomMenu,
+  HomeIcon,
+  SearchIcon,
+  BellIcon,
+  EmailIcon,
+} from './styles'
 
-export default function Main(){
+import ProfilePage from '../ProfilePage'
+
+export default function Main() {
   return (
-
     <Container>
       <Header>
         <button>
@@ -15,14 +26,14 @@ export default function Main(){
         </ProfileInfo>
       </Header>
 
-      {/* <ProfilePage />*/}
+      <ProfilePage />
 
       <BottomMenu>
         <HomeIcon className="active" />
         <SearchIcon />
         <BellIcon />
         <EmailIcon />
-      </BottomMenu> 
+      </BottomMenu>
     </Container>
-)
+  )
 }
